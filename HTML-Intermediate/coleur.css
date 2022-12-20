@@ -1,0 +1,18 @@
+h1{
+    color:aqua;
+}
+h2{
+    color: red;
+    text-align: center;
+    border:solid lime;
+}
+a{
+    color:greenyellow;
+}
+p{
+    color:blue,
+}
+body{
+    background-image: -o-repeating-linear-gradient(backgroundimage.jpg);
+    background-size:cover;
+}
