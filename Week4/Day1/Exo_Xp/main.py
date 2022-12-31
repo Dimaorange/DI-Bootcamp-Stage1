@@ -1,5 +1,5 @@
 # Exercice 1
-print("Hello world \n" "Hello world \n" "Hello world \n" "Hello world \n" )
+print(4*"Hello world \n" )
 
 #Exercice 2
 print((99**3)*8)
