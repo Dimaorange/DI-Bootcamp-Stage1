@@ -1,13 +1,14 @@
 #Exercise 1
+"""
 #1.
-my_fav_numbers={8,11}
+my_fav_numbers={"+22663944821","+22666939120"}
 #2.
-my_fav_numbers.add(15)
-my_fav_numbers.add(7)
+my_fav_numbers.add("+22678388911")
+my_fav_numbers.add("+22678488372")
 #3.
-my_fav_numbers.discard(7)
+my_fav_numbers.discard("+22678488372")
 #4.
-friend_fav_numbers={12,6,17}
+friend_fav_numbers={"+22670700334","+22670461173","+22670176714"}
 #5.
 our_fav_numbers=my_fav_numbers.union(friend_fav_numbers)
 
