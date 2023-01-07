@@ -1,0 +1,5 @@
+mot=input("Entrez une séquence de mots séparés par des virgules:\n")
+x=mot.split(",")
+x=sorted(x)
+mot=",".join(x)
+print(mot)
