@@ -1,4 +1,3 @@
-"""
 #Exercice 1
 class Cat:
     def __init__(self, cat_name, cat_age):
@@ -43,36 +42,16 @@ if davids_dog.height<sarahs_dog.height:
 	print(sarahs_dog.name)
 else:
 	print(davids_dog.name)
-"""
+
 #Exercice 3 a revoir
 class Song():
-	def __int__(self,lyrics):
+	def __init__(self,lyrics):
 		self.name=lyrics
-		#print(f"{self.lyrics}")
 
-	def sing_me_a_song(self,lyr):
-		print(f"{self.name}")
-stairway=Song()
-stairway.sing_me_a_song(["There’s a lady who 's sure","all that glitters is gold", "and she’s buying a stairway to heaven"])
+	def sing_me_a_song(self,lyrics):
+		for elem in lyrics:
+			self.name=elem
+			print(f"{self.name}")
 
-#Exercice 4
-class Zoo():
-	def __int__(self,Zoo_name):
-		self.animals=[]
-		self.name=Zoo_name
-
-	def add_animals(self,new_animal):
-		if new_animal not in animals:
-			animals=animals.append(new_animal)
-
-	def get_animal(self):
-		for animal in animals:
-			print(animal)
-
-	def sell_animal(self,animal_sold):
-		if animal_sold in animals:
-			animals.remove(animal_sold)
-
-	def sort_animals(self):
-		animals=sorted(animals)
-		
+stairway= Song(["There’s a lady who's sure","all that glitters is gold", "and she’s buying a stairway to heaven"])
+stairway.sing_me_a_song(["There’s a lady who's sure","all that glitters is gold", "and she’s buying a stairway to heaven"])

@@ -67,6 +67,7 @@ def player_input():
 			n1,n2=gagnant(liste)
 			check_win(n1,n2)
 		i+=1
+	print("Draw game")
 	print("Game over!")
 	
 def verification(a,b,n):
@@ -115,14 +116,3 @@ def play():
 	player_input()	
 
 play()
-"""
-liste=[
-		[" O"," "," X"],
-		[" X"," O","  "],
-		[" X"," "," O"]
-		]
-n1=[]
-n2=[]
-n1,n2=gagnant(liste)
-victoire(n1,n2)
-"""

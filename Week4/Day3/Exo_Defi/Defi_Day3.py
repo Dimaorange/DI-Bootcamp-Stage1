@@ -1,5 +1,6 @@
 #Defi 1
 #1.
+# utilisé import RE
 name=input("Entre votre nom:\n")
 #2.
 nam=[]
