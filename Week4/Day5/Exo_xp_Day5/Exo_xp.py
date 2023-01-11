@@ -46,7 +46,6 @@ def player_input():
 	a=0
 	b=0
 	n=""
-	players=["X","O"]
 	v=r.choice(["X","O"])
 	if v=="X":
 		s="O"
@@ -84,35 +83,7 @@ def verification(a,b,n):
 	else:
 		liste[a][b]=n
 	display_board(liste)
-"""
-def gagnant(liste):
-	numX=[]
-	for elem in liste:
-		i=0
-		while elem!=[] and i<3:
-			if elem[i]=="X":
-				numX.append(i)
-			i+=1
-	numO=[]
-	for elem in liste:
-		i=0
-		while elem!=[] and i<3:
-			if elem[i]=="O":
-				numO.append(i)
-			i+=1
-	return numX,numO
 
-def check_win(numX,numO):
-	succes=[["00","01","02"],[0,1,2],[2,1,0]]
-	if numX in succes:
-		print("Player X is the winner.")
-		print("Game over!")
-		exit()
-	elif numO in succes:
-		print("Player O is the winner.")
-		print("Game over!")
-		exit()
-"""
 def check_win(liste,n):
 	if liste[0][0]==liste[0][1]==liste[0][2]==n:
 		print(f"Player {n} is the winner.")
