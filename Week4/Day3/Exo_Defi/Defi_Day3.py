@@ -1,7 +1,9 @@
-#Defi 1
+#Defi 1 à refaire
 #1.
 # utilisé import RE
+import re
 name=input("Entre votre nom:\n")
+#name=re.[a-zA-Z]*
 #2.
 nam=[]
 for i in name:
@@ -19,7 +21,7 @@ for n in nam:
 		i+=1
 	dico.update({n:bat})
 print(dico)
-
+"""
 #Def 2.
 elem={"water":"$6",
  "Pineapple":"$8", 
@@ -40,3 +42,4 @@ if deco!={}:
 	print(sorted(deco))
 else:
 	print("Nothing")
+"""

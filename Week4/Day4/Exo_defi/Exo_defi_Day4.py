@@ -1,3 +1,4 @@
+#A refaire
 liste1=["7","T","h","i","s","$","#","^"]
 liste2=["i","s","%"," ","M","a","t","r"]
 liste3=["3","i","x","#"," "," ","%","!"]
@@ -10,7 +11,7 @@ for elem in liste:
 			mot=mot+i
 		else:
 			nb+=1
-			if nb==2:
+			if nb>=2:
 				mot=mot+" "
 				nb=0
 print(mot)
