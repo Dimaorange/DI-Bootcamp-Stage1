@@ -1,10 +1,10 @@
-#Defi 1 à refaire
+#Defi 1 
 #1.
-# utilisé import RE
+# Utilisation des expressions réguliaires:import RE
 import re
 name=input("Entre votre nom:\n")
-#name=re.[a-zA-Z]*
-#2.
+while not re.match(r"^[a-zA-Z]*$",name):
+	name=input("Entre votre nom:\n")
 nam=[]
 for i in name:
 	if i in nam:

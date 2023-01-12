@@ -1,3 +1,4 @@
+"""
 #Exercice 1
 class Pets():
     def __init__(self, animals):
@@ -24,57 +25,42 @@ class Bengal(Cat):
 class Chartreux(Cat):
     def sing(self, sounds):
         return f'{sounds}'
+
+class Siamese(Cat):
+    pass
+
+chien=Bengal("Rex",5)
+chat=Chartreux("Boby",8)
+path=Siamese("Millou",3)
+all_cats=[chien,chat,path]
+
+sara_pets=Pets(all_cats)
+sara_pets.walk()
 """
-#Exercice 4
-class Zoo():
-    def __init__(self,Zoo_name):
-        self.animals=[]
-        self.name=Zoo_name
+#Exercice 2
+class Dog():
+    def __init__(self,name,age,weight):
+        self.name=name
+        self.age=age
+        self.weight=weight
 
-    def add_animals(self,new_animal):
-        if new_animal not in self.animals:
-            self.animals.append(new_animal)
-        return self.animals
+    def bark(self):
+        return f"{self.name} aboie"
 
-    def get_animal(self):
-        for animal in self.animals:
-            print(animal)
+    def run_speed(self):
+        return self.name,self.weight/self.age*10
 
-    def sell_animal(self,animal_sold):
-        try:
-            self.animals.remove(animal_sold)
-        except:
-            print(f"{animal_sold} n'existe pas.")
+    def fight(self,other_dog):
+        a,b=self.run_speed()
+        if b*self.weight > (other_dog.weight/other_dog.age*10)*other_dog.weight:
+            return self.name,"a gagné le combat"
+        else:
+            return other_dog.name,"a gagné le combat"
 
-    def sort_animals(self):
-        self.animals=sorted(self.animals)
-        elem=[]
-        diction={}
-        for i in enumerate(self.animals):
-            elem.append(i)
-            dico=dict(elem)
-            diction=dico
-            dictionnaire={}
-        for cle1,valeur in diction.items():
-            if cle1 not in dictionnaire.items():
-                el=[]
-                for cle,valeur in dico.items():
-                    el.append(diction[cle1])
-                    if dico[cle][0]==diction[cle1][0] and cle!=cle1:
-                        el.append(dico[cle])
-                dictionnaire.update({cle1:el})
-        print(dictionnaire)
-
-            
-animal_name=Zoo("Mamifère")
-animal_name.add_animals("chevre")
-animal_name.add_animals("boeuf")
-animal_name.add_animals("lapine")
-animal_name.add_animals("mouton")
-animal_name.add_animals("chevraux")
-animal_name.add_animals("buffle")
-animal_name.add_animals("lapin")
-#animal_name.sell_animal("mouton")
-#animal_name.get_animal()
-animal_name.sort_animals()
-"""
+"""chien=Dog("Rex",5,12)
+chat=Dog("Bob",6,3)
+path=Dog("Millou",3,9)
+other_dog=Dog("Boby",8,15)
+print(chien.bark())
+print(path.run_speed())
+print(chat.fight(other_dog))"""
