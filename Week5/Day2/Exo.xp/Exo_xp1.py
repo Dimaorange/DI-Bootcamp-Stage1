@@ -57,10 +57,12 @@ class Dog():
         else:
             return other_dog.name,"a gagné le combat"
 
-"""chien=Dog("Rex",5,12)
+"""
+chien=Dog("Rex",5,12)
 chat=Dog("Bob",6,3)
 path=Dog("Millou",3,9)
 other_dog=Dog("Boby",8,15)
 print(chien.bark())
 print(path.run_speed())
-print(chat.fight(other_dog))"""
+print(chat.fight(other_dog))
+"""
